@@ -1,23 +1,6 @@
-## [Python ReadMe Creator](#python-sever)
+import os
 
-[![Language](https://img.shields.io/pypi/pyversions/3)]()
-[![License](https://img.shields.io/github/license/vhesener/Closures.svg?style=plastic&colorB=68B7EB)]()
-
-
-This is a basic Python ReadMe Generator which can be used to make a ReadMe for a Github Project
-
-***
-## [Setup](#usage-overview)
-
-### **Convenient Closures**
-
-Clear the ReadME File
-
-```swift
-    python generator.py
-
-```
-
+strLicense = """
 
 ## [License](#license)
 
@@ -39,4 +22,22 @@ NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPO
 NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
 DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-```
+
+
+"""
+with open('README.md', 'a') as file:
+    name = input("Projectname » ")
+    file.write("## [ " + name + "](#name)")
+    file.write("\n[![License](https://img.shields.io/github/license/vhesener/Closures.svg?style=plastic&colorB=68B7EB)]()\n\n")
+
+    description = input("description » ")
+    file.write(description)
+
+    file.write("## [Setup](#usage-overview)\n")
+    Setupdescription = input ("Setup description » ") 
+    file.write(Setupdescription)
+
+    Setupcommand = input("Setup command » ")
+    file.write("```swift\n + " + Setupcommand +  "\n ```")
+    file.write(strLicense)
+

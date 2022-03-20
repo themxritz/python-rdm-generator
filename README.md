@@ -1,4 +1,4 @@
-## [Python ReadMe Creator](#python-sever)
+## [Python ReadMe Creator](#python-rdm-generator)
 
 [![Language](https://img.shields.io/pypi/pyversions/3)]()
 [![License](https://img.shields.io/github/license/vhesener/Closures.svg?style=plastic&colorB=68B7EB)]()
